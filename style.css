@@ -1,99 +1,103 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
 }
 .container{
     width: 100%;
     height: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid green;
 }
-.container1{
-    background-color:black;
-}
-
-nav {
-    /* background-color: black; */
-    height: 60px;
+ nav {
+    background-color: rgb(13, 13, 14);
+    height: 80px;
+    border-bottom: 5px solid rgb(182, 28, 8);
 }
 
 nav span {
-    /* color: black; */
+    color: white;
     font-size: 15pt;
     font-family: 'Poppins';
     margin-left: 5px;
     line-height: 55px;
-    /* float: left; */
 }
 
 nav ul {
     list-style: none;
-    margin: 18px 20px;
-    float: left;
-}
+     margin-left:  200px;
+    margin-top: -35px; 
+    align-items: center;
+    float: left; 
+ } 
 
-nav ul li {
+ nav ul li {
     display: inline;
     padding: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(248, 241, 241);
     font-family: 'Ubuntu';
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
 nav ul li a:hover {
-    color: black;
+    border-bottom: 3px solid rgb(182, 28, 8);
+    padding: 1px;
+ 
 }
 
 nav label i {
     color: white;
     font-size: 22pt;
-    float: left;
+    float:left;
     margin: 15px 20px;
     cursor: pointer;
 }
 
 nav #check1 {
     display: none;
-   
 }
 
 nav label {
     visibility: hidden;
-}
+} 
 
-@media (max-width: 768px) {
-    .container{
-        width: 100%;
-        height: 100%;
-        border: 1px solid blue;
-    }
-    nav ul {
-        width: 60%;
+@media(max-width: 768px) {
+    nav ul  {
+        width: 50%;
         height: 40vh;
-        background-color: black;
-        text-align: center;
-        margin: 0;
-        position: fixed;
+        text-align: left;
+        position:absolute;
         left: -100%;
         transition: 0.3s;
+        background-color: rgba(241, 245, 247, 0.829);
+        margin-left: 3px;
+        margin-top: 0px;
+        border-radius: 10px;
+        border: 1px solid rgba(180, 180, 180, 0.5);
+        box-sizing: border-box;
+
+        
     }
     nav ul li {
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+    nav ul li a{
+        color: black;
     }
     nav label {
         visibility: visible;
     }
     
-    
 }
 
-#check1:checked~ul {
+#check1:checked~ul  {
     left: 0;
+
 }
 
 #check1:checked~label #menu {
@@ -103,78 +107,94 @@ nav label {
 #check1:not(:checked)~label #cancel {
     display: none;
 }
-.container2{
-width: 100%;
-height: 100%;
-/* border: 1px solid red; */
 
-}
-
-.container3{
-    width: 100%;
-    height: 100%;
+.form1{
    
-}
-
-nav .display2{
+    background-color: white;
+ 
+    width: 200%;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 12px;
+ 
+ }
+ .form{
+     margin-right:  700px;
+     margin-top: -39px;
+     float: right;
+ }
+ input[type=button] {
+     width: 5%;
+     background-color: #4CAF50;
+     color: white;
+     padding: 6px 15px;
+     margin-right: 486px;
+     margin-top: -39px;
+     height: 5vh;
+     float: right;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ 
+   }
    
+   input[type=button]:hover {
+     background-color: rgb(21, 195, 21);
+   }
+   
+ .help{
+     
+     padding-right: 900px;
+     
+ }
+
+ .container2{
+    margin-left: 0px;
+    padding: 2px;
+    border-bottom: 10px black;
+    background-color: white;
+    margin-top: -20px;
     height: 60px;
-}
-nav ul .display1 {
-    list-style: none;
-    margin: 18px 20px;
-    float: left;
-    
+    box-sizing: border-box;
 }
 
-nav ul li #display {
+.container2 ul{
+  
+        list-style: none;
+        margin: 18px ;
+       
+        
+}
+.container2 ul li {
     display: inline;
     padding: 0 15px;
-    text-decoration: none;
-    /* color: white; */
-    font-family: 'Ubuntu';
+}
+ .container2 ul li a {
+    text-decoration:double 5px ;
+    color:black;
     font-size: 15pt;
-}
- #display:hover{
-border-bottom: 3px solid rgb(182, 28, 8);
-padding: 1px;}
-
-footer{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 2%;
-}
-.products{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid yellow; */
-     align-items: center;
-     
-}
-
-#search{
-    height: 30px;
+    
     
 }
-#btn{
-    width: 60px;
-    height: 30px;
-    background-color: rgb(25, 200, 25);
-    color: white;
-    border-radius: 20%;
-}
-.products div h2{
+
+
+.container2 ul li a:hover {
+    border-bottom: 3px solid rgb(182, 28, 8);
+    padding: 1px;
+} 
+
+
+ div h2{
    
     margin-top: 20px;
 }
+
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 200px;
+    /* max-width: 300px; */
+    max-width: 200px;
     margin-left:30px;
     margin-top: 50px;
     text-align: center;
@@ -207,7 +227,7 @@ footer{
     opacity: 0.7;
   
   }
-  .products{
+  .container3{
       display: flex;
       flex-direction: row;
       margin-top:30px;
@@ -216,4 +236,53 @@ footer{
   img{
       width:50%;
       height:50%
+  }
+  footer{
+  height:50px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  position:absolute;
+  bottom: 0;
+  width:100%
+
+ 
+ 
+  
+  }
+ 
+  @media(max-width: 768px){
+      .container3{
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          text-align: center;
+      }
+      div h2{
+         
+          margin-bottom:-10px;
+      }
+  }
+  @media(max-width: 768px){
+      .container2{
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 120px;
+          height: 200px;
+          text-align: center;
+      }
+          .container2 ul li  {
+              display: column;
+            padding: 0 100px;
+        }
+      }
+  
+  @media(max-width: 768px){
+      footer{
+          margin-top: 15px;
+        position:relative;
+        bottom: 0;
+      }
   }
